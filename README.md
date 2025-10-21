@@ -14,9 +14,13 @@
 
 ### 1. ติดตั้ง Dependencies
 
+**สำคัญ**: บอทนี้ใช้ Python 3.8-3.11 (ไม่รองรับ Python 3.13+ เนื่องจากปัญหาความเข้ากันได้)
+
 ```bash
 pip install -r requirements.txt
 ```
+
+**สำหรับ Render/Heroku**: ใช้ Python 3.11.9 (ระบุใน runtime.txt)
 
 ### 2. สร้างบอท Telegram
 
