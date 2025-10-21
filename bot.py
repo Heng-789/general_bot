@@ -5,7 +5,6 @@ from telegram.ext import (
     ContextTypes, filters
 )
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-import config  # Import config to set BOT_TOKEN
 
 # ==============================================
 # 🔑 ตั้งค่า TOKEN และ TIMEZONE
