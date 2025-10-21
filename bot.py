@@ -10,6 +10,10 @@ from apscheduler.schedulers.asyncio import AsyncIOScheduler
 # 🔑 ตั้งค่า TOKEN และ TIMEZONE
 # ==============================================
 BOT_TOKEN = os.getenv("BOT_TOKEN")
+
+if not BOT_TOKEN:
+    raise ValueError("BOT_TOKEN environment variable is not set. Please set it before running the bot.")
+
 TZ = pytz.timezone("Asia/Bangkok")
 
 # กลุ่มที่บอทรู้จัก (จะอัปเดตอัตโนมัติ)
